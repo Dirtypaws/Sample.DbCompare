@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Chrome frame-->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/kendo.web.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/routie/routie.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/routie/routes.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/bootstrap/bootstrap.min.css")"/>
+    @*<link rel="stylesheet" href="@Url.Content("~/Content/bootstrap/bootstrap-theme.min.css")"/>*@
+    <link rel="stylesheet" href="@Url.Content("~/Content/font-awesome.min.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/kendo.common.min.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/kendo.bootstrap.min.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/animate.min.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site.css")"/>
+
+    <title>Sample.DbCOmpare</title>
+    @*<link href="@Url.Content("~/Content/images/cash.ico")" rel="shortcut icon" type="image/x-icon" />*@
+
+    <script>
+        var _rootUrl = "@Url.Content("~")";
+    </script>
+</head>
+<body>
+    <div id="contentPane" style="height: 100%; border: 0; width: 100%;">
+        @RenderBody()
+    </div>
+
+    <script src="@Url.Content("~/Scripts/biz/_Layout.js")"></script>
+    <script>
+        Layout.init();
+    </script>
+
+    <!--[if IE]>
+            <script type="text/javascript" 
+                    src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+
+            <style>
+                .chromeFrameInstallDefaultStyle {
+                    width: 100%; /* default is 800px */
+                    border: 5px solid blue;
+                }
+            </style>
+
+            <div id="prompt">
+                <if IE without GCF, prompt goes here
+            </div>
+ 
+            <script>
+        // The conditional ensures that this code will only execute in IE,
+        // Therefore we can use the IE-specific attachEvent without worry
+                window.attachEvent("onload", function () {
+                    window.CFInstall.check({
+                        mode: "inline", // the default
+                        node: "prompt"
+                    });
+                });
+            </script>
+        <![endif]-->
+</body>
+</html>

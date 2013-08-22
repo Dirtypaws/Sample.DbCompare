@@ -1,0 +1,13 @@
+﻿#content {
+	margin: 12px 18px 12px 18px;
+}
+
+#search {
+	width: 100%;
+}
+
+#search > input {
+	float: left;
+	width: 220px;
+	margin-right: 6px;
+}
